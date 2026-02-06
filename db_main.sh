@@ -14,8 +14,8 @@ return
 fi
 
 echo "Connected to database: $db_name"
-read -p "Please Enter..."
-table_menu"$db_name"
+read -p "Press Enter..."
+table_menu "$db_name"
 }
 
 drop_db() {
