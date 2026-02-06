@@ -57,6 +57,7 @@ insert_row() {
     return
   fi
   columns=$(head -1 "$file")
+  echo "The columns in order: $columns"
   col_count=$(echo "$columns" | tr ',' '\n' | wc -l)
   read -p "Enter values (comma-separated, $col_count values): " values
   value_count=$(echo "$values" | tr ',' '\n' | wc -l)
